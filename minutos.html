@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/minutos.css">
+    <link rel="stylesheet" href="./css/conversor.css">
 
 </head>
 <body>
-    <p>Quantos reais serão gastos?</p>
-    <input type="text" name="reais" id="reais">
-    <p>Valor em minutos</p>
-    <span type="text" name="minutos" id="minutos">0</span>
+    <h3 class="text-top">Conversor de Reais em Horas</h3>
+    <div class="container">
+        <h3>Quantos reais serão gastos?</h3>
+        <input type="text" name="reais" id="reais">
+        <h3>Valor em minutos</h3>
+        <span type="text" name="minutos" id="minutos">0</span>
 
-    <p><button type="button" id="btn" onclick="conta()">Ver Minutos</button></p>
-    
+        <p><button type="button" id="btn" onclick="conta()">Ver resultado</button></p>
+    </div>
     
     <!-- JS -->
     <script src="./js/minutos.js"></script>

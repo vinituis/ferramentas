@@ -59,6 +59,7 @@
     font-size: 25px;
     color: var(--cor-texto);
     font-weight: bold;
+    text-align: center;
 }
 
 .container button {

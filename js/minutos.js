@@ -14,5 +14,5 @@ function conta() {
 
     var emHoras = parseFloat(total) / 60;
 
-    retorno.innerHTML = total.toFixed(0) + " minutos que é igual a " + emHoras.toFixed(2) + " horas";
+    retorno.innerHTML = total.toFixed(0) + " minutos, que é aproximadamente <br>" + emHoras.toFixed(0) + " horas";
 }
