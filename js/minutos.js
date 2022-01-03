@@ -6,11 +6,13 @@ console.log(reais);
 
 function conta() {
 
-    var valorPorMinuto = 0.5;
+    var valorPorHora = 16.11;
+    
+    var valorPorMinuto = valorPorHora / 60;
 
     var total = parseFloat(reais.value) / valorPorMinuto;
 
     var emHoras = parseFloat(total) / 60;
 
-    retorno.innerHTML = total + " minutos que é igual a " + emHoras.toFixed(2) + " horas";
+    retorno.innerHTML = total.toFixed(0) + " minutos que é igual a " + emHoras.toFixed(2) + " horas";
 }

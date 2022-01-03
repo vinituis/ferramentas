@@ -6,13 +6,13 @@ console.log(retorno);
 
 function conta() {
 
-    var valorPorMinuto = 0.5;
-
-    var valorPorHora = valorPorMinuto * 60;
+    var valorPorHora = 16.11;
+    
+    var valorPorMinuto = valorPorHora / 60;
 
     var total = parseFloat(hora.value) * valorPorMinuto;
 
     var valorTotal = total;
 
-    retorno.innerHTML = "R$ " + total;
+    retorno.innerHTML = "R$ " + total.toFixed(2);        
 }

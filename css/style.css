@@ -1,46 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
 :root{
     --cor-icon: #696969;
     --cor-fundo: #2a2a2a;
+    --cor-titulo: #606060;
+    --cor-texto: #000;
 }
 
 * {
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Float four columns side by side */
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
 .row {
-    margin: 0 -5px;
+    margin: 80px 0px;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 800px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
+.row .card {
+    text-decoration: none;
 }
 
-/* Style the counter cards */
+.row .card h3 {
+    font-size: 25px;
+    color: var(--cor-titulo);
+}
+
+.row .card p {
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--cor-texto);
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
@@ -50,6 +57,19 @@ body {
 
 .card i {
     font-size: 90px;
-    margin-top: -50%;
+    margin-top: 0;
     color: var(--cor-icon);
+}
+
+/* Queries */
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .row {
+        margin: 50px 0;
+    }
 }
