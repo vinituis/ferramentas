@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+:root{
+    --cor-btn: #696969;
+    --cor-btn-texto: #fff;
+    --cor-fundo-caixa: #696969;
+    --cor-texto-caixa: #fff;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 30px;
+}
+
+.container form {
+    font-size: 15px;
+    width: 100%;
+}
+
+.container form div label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.container form div input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1 solid #696969;
+    text-align: center;
+}
+
+.container form div input:focus {
+    outline: none;
+    text-align: center;
+}
+
+.container form div.btn button {
+    margin: 50px 0;
+    padding: 10px 42%;
+    background: var(--cor-btn);
+    color: var(--cor-btn-texto);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container form div.btn button:hover {
+    color: var(--cor-btn);
+    background: var(--cor-btn-texto);
+    border: 1px solid #696969;
+}
+
+.container form div.resultado {
+    text-align: center;
+    background: var(--cor-fundo-caixa);
+    color: var(--cor-texto-caixa);
+    padding: 50px 10%;
+    border-radius: 8px;
+    font-weight: bold;   
+}
