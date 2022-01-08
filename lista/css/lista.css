@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --cor-fundo: #696969;
+    --cor-fundo-item: #fff;
+    --cor-fundo-item-add: #fefefe;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cor-fundo);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cor-fundo);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container div.lista {
+    width: 50%;
+}
+
+.container .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--cor-fundo-item);
+    margin-bottom: 2%;
+    padding: 5px 0;
+}
+
+.container .item input[type="checkbox"] {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.container .item div {
+    background: var(--cor-fundo-item);
+}
+
+.container .item input[type="button"] {
+    border: none;
+    background: var(--cor-fundo-item);
+}
+
+.container label.novo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: var(--cor-fundo-item-add);
+    margin: 10px;
+    padding: 5px 0;
+}
+
+.container label.novo-item input {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: var(--cor-fundo-item-add);
+    font-size: 16px;
+}
+
+.container label.novo-item input:focus {
+    outline: none;
+    font-size: 16px;
+}
+
+.container label.novo-item div {
+    font-size: 10px;
+    vertical-align: center;
+    margin: 0 10px;
+    background: var(--cor-fundo-item-add);
+}
+
+.item > input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container div.lista {
+        width: 100%;
+    }
+
+    .container label.novo-item {
+        width: 100%;
+    }
+
+}
