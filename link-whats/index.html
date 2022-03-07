@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <input type="tel" id="nTel" placeholder="apenas números (não colocar +5511)">
+    <div class="content">
+        <h3 class="text-top">Gerador de link do WhatsApp com mensagem</h3>
 
-    <input type="text" id="mensagem" placeholder="Mensagem">
-    
-    <button onclick="geraLink()">Gerar link</button>
-    
-    <br><br>
-    <div id="link"></div>
+        <input type="number" id="nTel" placeholder="Digite o número com DDD">
 
+        <input type="text" id="mensagem" placeholder="Digite a mensagem">
+        
+        <button onclick="geraLink()">Gerar link</button>
+        <button onclick="limpaLink()">Limpar</button>
+        
+        <br><br>
+        <div class="link" id="link"></div>
+
+    </div>
 <script src="./mais.js"></script>
 
 </body>

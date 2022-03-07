@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Encurtador de link</h2>
-    <input type="text" id="input-url" placeholder="Coloque aqui seu link">
-    <button onclick="encurtarUrl()">Encurtar</button>
-    <button onclick="copiar()">Copiar</button>
+    <div class="content">
+        <h3 class="text-top">Encurtador de link</h3>
+        <input type="text" id="input-url" placeholder="Coloque seu link aqui">
+        <button id="encurta" onclick="encurtarUrl()">Encurtar</button>
+        <button id="copia" onclick="copiar()">Copiar link</button>
+
+        <button id="reset" onclick="reset()">Resetar</button>
+
+    </div>
 
     <script src="./script.js"></script>
 </body>
