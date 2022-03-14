@@ -11,7 +11,7 @@ function geraLink () {
   nTel = tel.value;
   m = msg.value
   
-  link.innerText = 'https://wa.me/+55' + nTel + '?text=' + m;
+  link.innerHTML = '<a href="' + 'https://wa.me/+55' + nTel + '?text=' + m + '">https://wa.me/+55' + nTel + '?text=' + m;
   }
 }
 

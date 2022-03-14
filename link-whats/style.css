@@ -67,3 +67,8 @@ input[type=number] {
   font-size: 25px;
   font-weight: 200;
 }
+
+a {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
